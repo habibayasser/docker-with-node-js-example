@@ -1,0 +1,24 @@
+
+# services:
+#   node-app:
+#     container_name: express-node-app-container
+#     build: .
+#     env_file:
+#       - ./.env
+
+services:
+  node-app:
+    container_name: express-node-app-container
+    build: .
+    env_file:
+      - ./.env
+  mango:
+    image: mango:latest
+    restart: always
+    environment:
+      - MANGO_INITDB_ROOT_USERNAME=root
+      - MANGO_INITDB_ROOT_PASSWORD=password
+    volumes:
+      - mango-data:/data/db
+    env_file:
+      - ./.env
