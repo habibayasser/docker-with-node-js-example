@@ -191,12 +191,15 @@ Container-based application architecture
 Production-ready Docker practices
 
 Configuration management principles
-these the two presentation links
-https://docker-first-steps.lovable.app/
-https://docker-beyond-basics.lovable.app/
 
 Data persistence strategies
 
 DevOps automation basics
 
 Real-world deployment pipelines
+
+---------------------------------------------------------
+
+these the two presentation links
+https://docker-first-steps.lovable.app/
+https://docker-beyond-basics.lovable.app/
